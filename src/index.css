@@ -1,26 +1,30 @@
+/* This class applies styles to the square elements in the game */
 .square {
-  width: 34px;
-  height: 34px;
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  font-size: 24px;
-  font-weight: bold;
-  line-height: 34px;
-  text-align: center;
+  width: 34px; /* Sets the width of each square to 34 pixels */
+  height: 34px; /* Sets the height of each square to 34 pixels */
+  background: #fff; /* Sets the background color of the squares to white */
+  border: 1px solid #999; /* Adds a solid border of 1 pixel with a light gray color */
+  float: left; /* Floats the squares to the left, aligning them side by side */
+  font-size: 24px; /* Sets the font size of the text inside the squares to 24 pixels */
+  font-weight: bold; /* Makes the text inside the squares bold */
+  line-height: 34px; /* Sets the line height to 34 pixels, centering the text vertically */
+  text-align: center; /* Centers the text horizontally */
 }
 
+/* This class applies styles to the rows in the board */
 .board-row:after {
-  clear: both;
-  content: "";
-  display: table;
+  clear: both; /* Clears the floats, ensuring that rows don't collapse */
+  content: ""; /* Adds an empty content to apply the clearfix */
+  display: table; /* Makes the after element a block-level table, fixing the height issue */
 }
 
+/* This class applies styles to the main game container */
 .game {
-  display: flex;
-  flex-direction: row;
+  display: flex; /* Applies a flexbox layout to the game container */
+  flex-direction: row; /* Arranges the children of the game container in a row */
 }
 
+/* This class applies styles to the game information container */
 .game-info {
-  margin-left: 20px;
+  margin-left: 20px; /* Adds a left margin of 20 pixels, spacing it from the board */
 }
