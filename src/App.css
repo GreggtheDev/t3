@@ -1,38 +1,49 @@
+/* This class applies styles to the App component */
 .App {
-  text-align: center;
+  text-align: center; /* Centers the text within the component */
 }
 
+/* This class applies styles to the logo within the App component */
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 40vmin; /* Sets the height of the logo to 40% of the viewport's minimum dimension (either width or height) */
+  pointer-events: none; /* Disables pointer events on the logo, making it unclickable */
 }
 
+/* Media query to apply styles based on the user's motion preference settings */
 @media (prefers-reduced-motion: no-preference) {
+  /* If the user has no preference for reduced motion, apply this animation to the logo */
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear; /* Spins the logo infinitely with a duration of 20 seconds per cycle in a linear motion */
   }
 }
 
+/* This class applies styles to the header within the App component */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #282c34; /* Sets the background color of the header to a dark gray (#282c34) */
+  min-height: 100vh; /* Sets the minimum height of the header to 100% of the viewport height */
+  display: flex; /* Applies flexbox layout to the header */
+  flex-direction: column; /* Arranges the flex items (children) in a column */
+  align-items: center; /* Centers the flex items horizontally */
+  justify-content: center; /* Centers the flex items vertically */
+  font-size: calc(
+    10px + 2vmin
+  ); /* Sets the font size to a calculated value based on the viewport size, ensuring responsiveness */
+  color: white; /* Sets the text color to white */
 }
 
+/* This class applies styles to the links within the App component */
 .App-link {
-  color: #61dafb;
+  color: #61dafb; /* Sets the color of the links to a light blue (#61dafb) */
 }
 
+/* Keyframes for the logo spin animation */
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Starts the spin from 0 degrees */
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(
+      360deg
+    ); /* Ends the spin at 360 degrees, completing a full rotation */
   }
 }
